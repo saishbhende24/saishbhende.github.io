@@ -6,6 +6,12 @@ html,
 body{
  height: 100%;
  background-image: image-url('img/productback.jpg');
+ text-align: center;
+}
+
+form
+{
+  display: inline-block;
 }
 
 #cover {
