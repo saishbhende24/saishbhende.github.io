@@ -10,6 +10,11 @@ body{
  font-family: 'Kelly Slab', cursive;
 }
 
+header
+{
+  text-align: center;
+}
+
 form
 {
   display: inline-block;
