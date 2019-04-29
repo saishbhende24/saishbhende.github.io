@@ -10,8 +10,12 @@
     <title>Saish Portfolio </title>
     <!-- Theme CSS -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 
     <link rel="stylesheet" href="stylesheets/application.scss">
     <link rel="stylesheet" href="stylesheets/simple_pages.css">
@@ -33,7 +37,6 @@ img
  {
    font-size: 18px;
  }
-
 
 </style>
 </head>
@@ -154,46 +157,62 @@ img
 
 <section class="success" id="projects">
     <center><h2>Projects</h2></center>
-    <hr class="star-primary">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-       <ol class="carousel-indicators">
-         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-         <li data-target="#myCarousel" data-slide-to="1" ></li>
-         <li data-target="#myCarousel" data-slide-to="2" ></li>
-         <li data-target="#myCarousel" data-slide-to="3"></li>
-       </ol>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <a class="carousel-control-prev" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  <!-- Wrapper for slides -->
+ <!-- Carousel -->
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+   <!-- Indicators -->
+   <ol class="carousel-indicators">
+     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+     <li data-target="#myCarousel" data-slide-to="1"></li>
+     <li data-target="#myCarousel" data-slide-to="2"></li>
+     <li data-target="#myCarousel" data-slide-to="3"></li>
+   </ol>
 
-   <div class="carousel-inner" role="listbox" id="pj1">
+   <!-- Wrapper for slides -->
+   <div class="carousel-inner" role="listbox">
      <div class="item active">
-    <center>    <p> <b>E-commerce Website:</b> <ol><br>
- <li >Constructed an E-commerce website for furniture retailer by implementing the MVC framework.</li><br>
-<li>Utilized JSP technology and front controller to create login forms using Spring Security.</li></ol></P>  </center>
-     </div>
-
+       <center>    <p> <b>E-commerce Website:</b> <ol><br>
+     <li >Constructed an E-commerce website for stationary equipment by implementing the MVC framework.</li><br>
+     <li>Utilized Ruby on Rails technology to build a web application.</li></ol></P>  </center>
+       </div>
      <div class="item">
-       <center> <p> <b>Football Merchandise Website:</b> <ol><br>
-    <li>Built a responsive website for the sale of football merchandise using Bootstrap framework, HTML5, CSS3, jQuery technologies. </li><br>
-</ol></P>  </center>
-    </div>
+       <center> <p> <b>Medassist Expert Medical Diagnosis System</b> <ol><br>
+    <li> Designed the functional requirements and executed the test plan for the medical diagnosis system as a Quality Analyst. </li><br>
+</ol></p> </center>
+     </div>
+     <div class="item">
+       Enabled users to make online donations to Beta University and administrators to track donations.</li><br>
+    <li>Created database with MySQL and utilized MS Visio to design the E-R and UML diagrams.</li><br>
+     </div>
+   </div>
 
-   <div class="item">
-    <center> <p> <b>University Database for Fundraising:</b> <ol><br>
- <li> Built a database that enabled users to make online donations to Beta University and administrators to track donations.</li><br>
-<li>Created database with MySQL and utilized MS Visio to design the E-R and UML diagrams.</li><br>
-</ol></P>  </center>
-  </div>
-</div>
+   <!-- Left and right controls -->
+   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+     <span class="sr-only">Previous</span>
+   </a>
+   <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+     <span class="sr-only">Next</span>
+   </a>
+ </div>
+    -----------
 
-<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-  <span class="sr-only">Previous</span>
-</a>
-<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-  <span class="sr-only">Next</span>
-</a>
-</div>
-    </section>
 
     <section class="success" id="resume">
         <div class="container">
@@ -301,10 +320,10 @@ img
 
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
 </html>
