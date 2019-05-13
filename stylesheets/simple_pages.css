@@ -80,9 +80,14 @@ a.socialIcon:hover, .socialHoverClass {
 	text-align: center;
 }
 
-div.name
+span.name
 {
-  font-size: 150%;
+  font-size: 150px;
+}
+
+.row
+{
+  text-align: center;
 }
 
 .social-circle li a:hover i, .triggeredHover {
